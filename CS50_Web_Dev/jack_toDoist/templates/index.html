@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <ul>
+        {% for task in tasks %}
+            <!-- It will automatically generate 
+                3 list elements inside the html file -->
+            <li style="font-size: 23px;">{{ task }}</li>
+        {% endfor %}
+    </ul>
+    <div class="link">
+        <a href="{% url 'tasks:add' %}";">Add a New Task</a>
+    </div>
+{% endblock %}

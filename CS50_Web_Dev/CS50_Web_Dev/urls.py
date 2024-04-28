@@ -21,5 +21,7 @@ from FirstApp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("FirstApp/", include("FirstApp.urls"))
+    path("FirstApp/", include("FirstApp.urls")),
+    path('new_year/', include("new_year.urls")),
+    path('jack_toDoist/', include("jack_toDoist.urls"))
 ]
