@@ -5,7 +5,10 @@
         {% for task in tasks %}
             <!-- It will automatically generate 
                 3 list elements inside the html file -->
-            <li style="font-size: 23px;">{{ task }}</li>
+            <li style="font-size: 20px;">{{ task }}</li>
+        <!-- If nothing in the for loop, render empty tag -->
+        {% empty %}
+            <li style="font-size: 20px;">No tasks, hooray!</li>
         {% endfor %}
     </ul>
     <div class="link">
